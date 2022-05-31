@@ -17,6 +17,7 @@ export async function newBrowser(): Promise<Browser> {
 			'--allow-file-access',
 			'--lang=en',
 			'--no-sandbox',
+			'--disable-setuid-sandbox'
 		],
 		env: {
 			LANG: 'en',
